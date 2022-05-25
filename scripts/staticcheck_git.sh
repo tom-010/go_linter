@@ -12,7 +12,6 @@ exitCode=0
 
 for file in $allFiles
 do
-   echo $file
    staticcheck "$file" || exitCode=1
 done
 

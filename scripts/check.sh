@@ -5,3 +5,7 @@ errcheck ./...
 
 echo "goimports"
 goimports -w .
+
+echo "staticcheck"
+./scripts/staticcheck_all.sh
+
