@@ -6,7 +6,7 @@ exitCode=0
 
 for file in $files
 do
-   staticcheck "$file" || exitCode=1
+   go vet "$file" || exitCode=1
 done
 
 exit $exitCode
